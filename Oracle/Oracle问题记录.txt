@@ -1,0 +1,13 @@
+1.函数不能直接用call调用，只能在SQL中调用
+
+2.Oracle无视大小写？
+
+3.Oracle表名必须大写
+
+4.Oraclehome是个什么东西？
+
+5.100和'100'的差别，【走/不走索引】
+例如：表A（a varchar2）
+建立a的索引，此时select * from A where a=100;
+不会走索引，因为a会自动类型转换，此时查询相当于
+select * from A where to_number(a)=100;函数修饰谓词，无法使用谓词的索引
