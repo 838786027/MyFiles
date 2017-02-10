@@ -1,0 +1,5 @@
+1.表的disable和enable
+2.集群部署时，如果没有打开ssh免密登录，会导致启动脚本卡主（比如执行zookeeper时，会一直卡死，等待其他zookeeper启动，而不会“后台运行”转去运行其他脚本）
+3.集群部署时，ssh免密登录，本机到本机都需要配置，比如master配slave时，除了slave需要配置，master自己也需要配置到自己的免密登录
+4.region servers一闪而退：
+有可能是hbase家目录权限问题

@@ -1,0 +1,27 @@
+连接HBase{
+	./bin/hbase shell
+}
+退出HBase Shell{
+	quit
+}
+创建表{
+	create 'test', 'cf'
+	注意：test指的是表名，cf指的是ColumnFamily name
+}
+查询表信息{
+	list 'test'
+}
+插入表数据{
+	put 'test', 'row1', 'cf:a', 'value1'
+}
+查询表数据{
+	整表扫描=scan 'test'
+	获取单列数据=get 'test','row1'
+}
+able{
+	disable 'test'
+	enable 'test'
+}
+删除表{
+	drop 'test'
+}

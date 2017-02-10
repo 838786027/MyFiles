@@ -16,3 +16,25 @@ nc{
 	统计某文件夹下目录的个数=ls -l |grep "^ｄ"|wc -l
 	统计文件夹下文件的个数，包括子文件夹里的ls -lR|grep "^-"|wc -l
 }
+解压{
+	*.tar 用 tar –xvf 解压
+	*.gz 用 gzip -d或者gunzip 解压
+	*.tar.gz和*.tgz 用 tar –xzf 解压
+	*.bz2 用 bzip2 -d或者用bunzip2 解压
+	*.tar.bz2用tar –xjf 解压
+	*.Z 用 uncompress 解压
+	*.tar.Z 用tar –xZf 解压
+	*.rar 用 unrar e解压
+	*.zip 用 unzip 解压
+}
+kill{
+	kill命令可以带信号号码选项，也可以不带。如果没有信号号码，kill命令就会发出终止信号(15)。
+	只有第9种信号(SIGKILL)才可以无条件终止进程，其他信号进程都有权利忽略。 下面是常用的信号：
+		HUP    1    终端断线
+		INT     2    中断（同 Ctrl + C）
+		QUIT    3    退出（同 Ctrl + \）
+		TERM   15    终止
+		KILL    9    强制终止
+		CONT   18    继续（与STOP相反， fg/bg命令）
+		STOP    19    暂停（同 Ctrl + Z）
+}
