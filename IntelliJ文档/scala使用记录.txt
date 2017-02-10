@@ -1,0 +1,1 @@
+1.scala console必须键入ctrl+enter才能使内容生效

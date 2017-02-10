@@ -1,0 +1,14 @@
+1.同一个SolrNode不能存在同名core
+每个core的core.properties的name不能相同
+
+2.使用SolrJ的首个连接很慢
+可能Solr用的是长连接，第一次连接很慢，建立完连接后，后面的操作都可以使用同一个连接
+
+3.SolrCloud注册live_nodes时，会使用本机ip，有可能是内网ip，此时如果多台服务器不在同一个内网，则无法建立集群（解决）
+将solr.xml中的<str name="host">${host:}</str>改为<str name="host">外网地址</str>
+
+4.单机版Solr和SolrCloud是不能共存的，因为单机版Solr读取的配置文件来自Core/conf，而SolrCloud读取的是Zookeeper下的/configs
+
+5.curl --data-binary 和 -d 的区别
+
+6.solr admin ui 对浏览器有要求

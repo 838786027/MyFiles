@@ -1,0 +1,12 @@
+scn：【多版本控制，系统版本点】
+rowid:【用于定位row，和oracle逻辑结构中的表空间，段，区相关】
+格式类似于OOOOOOFFFBBBBBBRRR（64进制）这样。其中O是对象id，F是文件id，B是块id，R是行id
+truncate：【控制表水位线】
+删除表所有内容，但不删除表结构，立即生效，不会进入日志，无法回滚；truncate属于ddl，delete属于dml
+awr:【oracle分析报表】
+ash:【oracle分析报表】
+块清除：
+清除块头事务信息，分为快速块清除和延迟块清除
+redo段与undo段：
+v$viewName：【实例当前状态】
+extent：【与水位线有关】

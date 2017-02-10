@@ -1,0 +1,3 @@
+1.object不同于class
+
+2.scala script是个什么东西！！！？？？

@@ -1,0 +1,4 @@
+ษพณýห๙ำะห๗าý{
+	<delete><query>*:*</query></delete>
+	<commit/>
+}

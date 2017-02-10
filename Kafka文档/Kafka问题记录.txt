@@ -1,0 +1,6 @@
+1.host.name问题
+host.name用于向zookeeper注册信息，该信息用于client连接Kafka集群
+
+2._consumer_offset问题
+正常关闭（kill -s TERM $PIDS）->_consumer_offset->清空index
+非正常关闭（断电，强制关机）->_consumer_offset->未清空index->重新启动，log loading导致OOM

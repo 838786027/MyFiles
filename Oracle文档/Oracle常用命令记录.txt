@@ -1,0 +1,80 @@
+# oracle 常用命令记录
+查询当前用户信息{
+	查看当前用户拥有的角色权限信息=select * from role_sys_privs;
+	查看当前用户的详细信息=select * from user_users;
+	查看当前用户的角色信息=select * from user_role_privs;
+}
+执行计划开关{
+	SET AUTOTRACE OFF=此为默认值，即关闭Autotrace 
+	SET AUTOTRACE ON EXPLAIN=只显示执行计划
+	SET AUTOTRACE ON STATISTICS=只显示执行的统计信息
+	SET AUTOTRACE ON=包含2,3两项内容
+	SET AUTOTRACE TRACEONLY=与ON相似，但不显示语句的执行结果
+}
+查看系统SCN{
+	当前SCN=select dbms_flashback.get_system_change_number from dual;
+	已保存SCN=select checkpoint_change# from v$database;
+}
+定时任务{
+	查看定时任务{
+		select * from dba_jobs;
+		select * from all_jobs;
+		select * from user_jobs;(select job,next_date,next_sec,failures,broken from user_jobs;)
+	}
+	创建定时任务：
+	declare
+    job number;
+	begin
+	sys.dbms_job.submit(job,
+	'pro_test;',
+	to_date('21-02-2008 17:37:26', 'dd-mm-yyyy hh24:mi:ss'),
+	'sysdate 1/24/12');
+	commit;
+	end;
+	/
+	注意：pro_test带;
+	修改定时任务：
+	declare
+    job number;
+	begin
+	job:=23;
+	sys.dbms_job.change(job,
+	'pro_test;',
+	to_date('21-02-2008 17:37:26', 'dd-mm-yyyy hh24:mi:ss'),
+	'sysdate 1/24/12');
+	commit;
+	end;
+	/
+}
+一次插入多条数据{
+	create table myTestTable as
+	select rownum as id,
+	to_char(sysdate + rownum/24/3600, 'yyyy-mm-dd hh24:mi:ss') as inc_datetime,
+	trunc(dbms_random.value(0, 100)) as random_id,
+	dbms_random.string('x', 20) random_string
+	from dual
+	connect by level <= 1000000;
+}
+dbms{
+	输出一行=DBMS_OUTPUT.PUT_LINE(...);
+	睡眠=dbms_lock.sleep(60);
+}
+查看数据块{
+	查看表对应的数据块文件号和块号=select dbms_rowid.rowid_relative_fno(rowid) fno,dbms_rowid.rowid_block_number(rowid) bno from test
+	保存块信息到Oracle安装目录\diag\rdbms\orcl\orcl\trace\...trc=alter system dump datafile 4 block 13270;
+}
+触发器{
+	定义触发器{
+		create or replace trigger t_bufer
+		before update on t for each row
+		begin
+		dbms_output.put_line
+		( 'old.x = ' || :old.x ||
+		', old.y = ' || :old.y );
+		dbms_output.put_line
+		( 'new.x = ' || :new.x ||
+		', new.y = ' || :new.y );
+		end;
+		/
+	}
+}

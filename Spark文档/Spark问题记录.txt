@@ -1,0 +1,9 @@
+1.开启spark-shell：
+java.io.IOException: Could not locate executable null\bin\winutils.exe in the Hadoop binaries.
+
+2.client和driver的区别
+根据Spark Application的Driver Program是否在集群中运行，Spark应用的运行方式又可以分为Cluster模式和Client模式。
+
+3.shuffle
+
+4.streaming中的receiver
