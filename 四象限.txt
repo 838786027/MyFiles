@@ -1,7 +1,10 @@
 第一象限（紧急，重要）：{
 	Zookeeper检测信息；Zookeeper官方文档 2017.1.23~2017.1.26~3天
 	HBase入门 2017.2.10~2017.2.14~3天
-	Q：HBase完全分布式部署，backupmaster起不来，提示master已经存在 2017.2.10
+	HBase的关闭 2017.2.13
+	Q：HBase创建表PleaseHoldException: Master is initializing 2017.2.13
+	HBase WAL机制 2017.2.13~2017.2.14~1小时
+	搭建Hadoop 2017.2.13~2017.2.14~1天
 }
 第二象限（紧急，不重要）：
 第三象限（不紧急，重要）{

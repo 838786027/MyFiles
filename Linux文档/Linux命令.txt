@@ -7,6 +7,9 @@ nc{
 查看端口占用情况{
 	lsof -i:80
 }
+查看进程占用的所有端口{
+	netstat -apn |grep PID
+}
 防火墙{
 	关闭当前防火墙=serivce iptabels stop
 	关闭防火墙开机自启动=chkconfig iptables off
