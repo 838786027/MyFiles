@@ -12,3 +12,6 @@
 5.curl --data-binary 和 -d 的区别
 
 6.solr admin ui 对浏览器有要求
+
+7.Solr日志配置log4j.properties注意存储文件的大小和数量，以免爆掉磁盘；
+  tomcat日志配置conf/logging.properties注意存储文件的大小和数量，以免爆掉磁盘

@@ -2,13 +2,16 @@ rpm{
 	rpm -ivh xxx.rpm
 }
 nc{
-	nc -lk 9999
+	nc -lk 9999	
 }
 查看端口占用情况{
 	lsof -i:80
 }
 查看进程占用的所有端口{
 	netstat -apn |grep PID
+}
+查看ip地址{
+	ifconfig
 }
 防火墙{
 	关闭当前防火墙=serivce iptabels stop
@@ -29,6 +32,7 @@ nc{
 	*.tar.Z 用tar –xZf 解压
 	*.rar 用 unrar e解压
 	*.zip 用 unzip 解压
+	*.tgz 用 tar zxvf 解压
 }
 kill{
 	kill命令可以带信号号码选项，也可以不带。如果没有信号号码，kill命令就会发出终止信号(15)。
@@ -40,4 +44,17 @@ kill{
 		KILL    9    强制终止
 		CONT   18    继续（与STOP相反， fg/bg命令）
 		STOP    19    暂停（同 Ctrl + Z）
+}
+远程调用{
+	scp=scp -r   /home/wwwroot/www/charts/util root@192.168.1.65:/home/wwwroot/limesurvey_back/scp
+	ssh:
+}
+查看硬盘使用情况{
+	df -hl
+}
+查看文件大小{
+	du -s FILENAME【-h或–human-readable 以K，M，G为单位，提高信息的可读性】
+}
+查看对某个文件进行操作的进程{
+	fuser FILENAME
 }

@@ -1,0 +1,5 @@
+1.dfs? hdfs? namenode? datanode?
+2.dfs.replication=0时，浏览器文件系统看不到文件，但用bin/hdfs -cat 却可以看到
+3.put文件到hdfs时出现警告，hdfs.DFSClient: Caught exception
+4.启动datanode时，出现UnknownHostException未知主机异常
+配置/etc/hosts需要重启，才能让hostname生效。其余未知
