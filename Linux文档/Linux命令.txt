@@ -74,3 +74,19 @@ kill{
 统计行数{
 	wc -l
 }
+查看内存情况{
+	free
+		usage: free [-b|-k|-m|-g] [-l] [-o] [-t] [-s delay] [-c count] [-V]
+		-b,-k,-m,-g show output in bytes, KB, MB, or GB
+		-l show detailed low and high memory statistics
+		-o use old format (no -/+buffers/cache line)
+		-t display total for RAM + swap
+		-s update every [delay] seconds
+		-c update [count] times
+		-V display version information and exit
+}
+查看“任务管理器”{
+	top
+		M
+		q
+}

@@ -7,9 +7,11 @@
 		安装失败->yum源在RedHat和CentOS的区别
 	使用Linux定时任务，清除tomcat/logs
 	记录Solr Replication相关原理流程，记录yum相关信息
+	Linux内存 swap是什么？
 }
 第二象限（紧急，不重要）：{
-	
+	整理鞍山信息；
+	整理揭阳备份信息
 }
 第三象限（不紧急，重要）{
 	修复虚拟机cdh1
