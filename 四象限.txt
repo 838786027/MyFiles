@@ -1,28 +1,24 @@
 第一象限（紧急，重要）：{
-	HBase入门 2017.2.10~2017.2.14~3天
-	HBase的关闭 2017.2.13
-	Q：HBase创建表PleaseHoldException: Master is initializing 2017.2.13
-	HBase WAL机制 2017.2.13~2017.2.14~1小时
-	GoInSight环境搭建
-		安装失败->yum源在RedHat和CentOS的区别
 	使用Linux定时任务，清除tomcat/logs
-	记录Solr Replication相关原理流程，记录yum相关信息
-	Linux内存 swap是什么？
+	压力测试：solr读写
+	Createrepo作用？
 }
 第二象限（紧急，不重要）：{
-	整理鞍山信息；
-	整理揭阳备份信息
 }
 第三象限（不紧急，重要）{
+	linux host原理
 	修复虚拟机cdh1
 		问题如下，备份/var后，重新分区挂载到/var，并拷贝备份，拷贝途中重启，导致/var没有完全拷贝完，无法开机。
 	tomcat日志配置
 		catalina.out一直增大
 		catalina.out xxx.txt不受日志系统控制
+	HBase的关闭 2017.2.13
+	Q：HBase创建表PleaseHoldException: Master is initializing 2017.2.13
+	HBase WAL机制 2017.2.13~2017.2.14~1小时
 	清空火狐【未完全阅读书签】
 }
 第四象限（不紧急，不重要）{
-	Solr主从负责，快照系统 2017.2.1~2017.2.2~1小时
+	Solr主从负责，快照系统->记录Solr Replication相关原理流程 2017.2.1~2017.2.2~1小时
 	JMX官方文档 2017.1.22~2017.2.4~3天
 	获取真正请求ip 2017.2.15 
 		服务器会自己封装数据，依据ip层的信息？
@@ -30,9 +26,8 @@
 	Git的使用 2017.2.1~2017.2.4~1天
 	RPC是什么 2017.2.16
 	Zookeeper检测信息；Zookeeper官方文档 2017.1.23~2017.1.26~3天
-	RedHat使用CentOS的源
-	Python和Linux的关系
-	Python和yum的关系
+	RedHat使用CentOS的源->Python和yum的关系
+	Linux内存 swap是什么？
 }
 
 2017书单：
