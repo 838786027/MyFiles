@@ -1,0 +1,2 @@
+【浏览器】：
+ie在解析iframe时，<base href="<%basePath%>">是无效的

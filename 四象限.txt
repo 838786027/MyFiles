@@ -1,24 +1,24 @@
 第一象限（紧急，重要）：{
-	使用Linux定时任务，清除tomcat/logs
-	压力测试：solr读写
-	Createrepo作用？
+	配合web，完成首次入城solr相关查询代码
+	239~241,120 cdh重新部署
+	solr，zk自动化部署工具
+	了解Spring boot和微服务
+	了解广州交委方案，实现“交通小区”
 }
 第二象限（紧急，不重要）：{
 }
 第三象限（不紧急，重要）{
 	linux host原理
-	修复虚拟机cdh1
-		问题如下，备份/var后，重新分区挂载到/var，并拷贝备份，拷贝途中重启，导致/var没有完全拷贝完，无法开机。
-	tomcat日志配置
-		catalina.out一直增大
-		catalina.out xxx.txt不受日志系统控制
 	HBase的关闭 2017.2.13
 	Q：HBase创建表PleaseHoldException: Master is initializing 2017.2.13
 	HBase WAL机制 2017.2.13~2017.2.14~1小时
+	
+	北屯鞍山，tomcat日志删除
 	清空火狐【未完全阅读书签】
 }
 第四象限（不紧急，不重要）{
-	Solr主从负责，快照系统->记录Solr Replication相关原理流程 2017.2.1~2017.2.2~1小时
+	Solr主从复制，快照系统->记录Solr Replication相关原理流程 2017.2.1~2017.2.2~1小时
+	
 	JMX官方文档 2017.1.22~2017.2.4~3天
 	获取真正请求ip 2017.2.15 
 		服务器会自己封装数据，依据ip层的信息？

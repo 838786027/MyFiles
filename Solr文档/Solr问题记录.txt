@@ -15,3 +15,7 @@
 
 7.Solr日志配置log4j.properties注意存储文件的大小和数量，以免爆掉磁盘；
   tomcat日志配置conf/logging.properties注意存储文件的大小和数量，以免爆掉磁盘
+  
+8.配置solrcloud时，web服务器开启的端口要和solr家目录下的solr.xml中的端口一致，否则会导致zookeeper注册错误端口，而导致node和node之间通信失败
+
+9.SolrCloud查询不一致？

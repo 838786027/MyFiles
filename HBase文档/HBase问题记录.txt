@@ -6,3 +6,4 @@
 5.启动时，region server进程和hmaster（hbase.master.port）由于共用默认端口16020导致启动失败（高版本才出现的问题）
 6.备份Master转为active时，出现FileSystemVersionException：
 version文件损坏，清除/hbase家目录，重启->数据丢失问题
+7.HBase的ACID
