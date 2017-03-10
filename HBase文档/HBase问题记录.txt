@@ -7,3 +7,5 @@
 6.备份Master转为active时，出现FileSystemVersionException：
 version文件损坏，清除/hbase家目录，重启->数据丢失问题
 7.HBase的ACID
+8.windows下连接hbase
+必须有winutils.exe，配置hosts（hbase在zookeeper上面注册的信息是host）

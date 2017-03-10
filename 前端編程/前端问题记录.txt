@@ -1,2 +1,5 @@
 【浏览器】：
 ie在解析iframe时，<base href="<%basePath%>">是无效的
+
+【js】：
+ajax后台返回json，string类型转int（parseInt）后进行判断都不行

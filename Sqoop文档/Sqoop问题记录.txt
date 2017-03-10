@@ -1,0 +1,1 @@
+1.sqoop本地系统环境java版本必须和mapreduce使用的java版本一致

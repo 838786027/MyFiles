@@ -3,3 +3,5 @@
 3.put文件到hdfs时出现警告，hdfs.DFSClient: Caught exception
 4.启动datanode时，出现UnknownHostException未知主机异常
 配置/etc/hosts需要重启，才能让hostname生效。其余未知
+5.master /dfs/nn/current/VERSION 中clusterID和slave /dfs/dn/current/VERSION 中clusterID不一致，导致启动datanode失败：All specified directories are failed to load
+解决方法：将slave的clusterID修改为和master中的clusterID一致，重启datanode即可

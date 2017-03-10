@@ -1,0 +1,3 @@
+sqoop list-databases --connect jdbc:oracle:thin:@192.168.12.242:1521:c3mits --username GOSUN --password video
+
+sqoop import --append --connect jdbc:oracle:thin:@192.168.12.242:1521:c3mits --username GOSUN --password video --hbase-create-table --table C_ORGROLE --hbase-table C_ORGROLE_COPY --hbase-row-key ID --column-family cf

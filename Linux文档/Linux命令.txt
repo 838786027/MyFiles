@@ -93,3 +93,5 @@ kill{
 查看系统版本{
 	uname -a
 }
+
+getconf LONG_BIT

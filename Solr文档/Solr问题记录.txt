@@ -19,3 +19,15 @@
 8.配置solrcloud时，web服务器开启的端口要和solr家目录下的solr.xml中的端口一致，否则会导致zookeeper注册错误端口，而导致node和node之间通信失败
 
 9.SolrCloud查询不一致？
+
+10.Solr 使用非String类型作为id时，无法启动
+解决方法：将elevator，注释掉
+    <!--  
+    <searchComponent name="elevator" class="solr.QueryElevationComponent" >  
+      <str name="queryFieldType">long</str>  
+      <str name="config-file">elevate.xml</str>  
+    </searchComponent>  
+    -->  
+
+11.solr时区问题
+机器A生成的时间戳，放置在solr集群B内显示，如果A，B的时区不同，则会影响solr admin里的显示
