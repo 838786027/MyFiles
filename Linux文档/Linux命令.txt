@@ -15,7 +15,7 @@ nc{
 }
 防火墙{
 	关闭当前防火墙=serivce iptabels stop
-	关闭防火墙开机自启动=chkconfig iptables off
+	关闭防火墙开机自启动=chkconfig [--level 2345] iptables off
 }
 查看文件夹下文件数量{
 	统计某文件夹下文件的个数=ls -l |grep "^-"|wc -l 
@@ -92,6 +92,20 @@ kill{
 }
 查看系统版本{
 	uname -a
+}
+文件数据分析{
+	awk：按行处理，以空格（多个空格）为默认分隔符将每行切片，切开的部分再进行各种分析处理
+	{
+		awk '{pattern + action}' {filenames}
+		（awk  '{print $1}'）
+	}
+	grep
+	cut
+	head{
+		head -1（获取第一行）
+		head -2（获取第二行）
+		...
+	}
 }
 
 getconf LONG_BIT
