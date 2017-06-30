@@ -10,8 +10,12 @@
 	交换机，端口隔离，端口聚合
 	http状态码
 	数据库赋予空值
+	SVN描述规范
+	hbase Unable to parse master hostname
+	各种实体类类型
 }
 第二象限（紧急，不重要）：{
+	linux i586和x64的区别
 }
 第三象限（不紧急，重要）{
 	linux host原理
