@@ -107,16 +107,3 @@ kill{
 查看系统版本{
 	uname -a
 }
-文件系统授权切换{
-	改变权限：chmod
-	切换拥有者：chown [-r] username filename
-	切换用户组：chgrp [-r] username filename
-}
-用户相关{
-	添加新用户：useradd username
-	修改用户密码：passwd username
-}
-
-head
-awk
-getconf LONG_BIT
