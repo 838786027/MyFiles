@@ -22,9 +22,22 @@
 	SVN描述规范
 	hbase Unable to parse master hostname
 	各种实体类类型
+	重复提交
+	chdp
+	jqgrid的用法整理
+	js使用事件绑定和触发机制
+	(intermediate value)(...) is not a function
+		用;隔开
+	断言的使用
+	tcp心跳机制
+	linux文件数据分析的相关命令
 }
 第二象限（紧急，不重要）：{
 	linux i586和x64的区别
+	fuelux.tree源码阅读
+	jgrid自定义过滤器
+	jgrid多字段排序
+	* mysql引擎问题，导致无法建立外键
 }
 第三象限（不紧急，重要）{
 	md5加密解密应该放在客户端还是服务器端？

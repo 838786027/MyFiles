@@ -107,3 +107,17 @@ kill{
 查看系统版本{
 	uname -a
 }
+文件数据分析{
+	awk：按行处理，以空格（多个空格）为默认分隔符将每行切片，切开的部分再进行各种分析处理
+	{
+		awk '{pattern + action}' {filenames}
+		（awk  '{print $1}'）
+	}
+	grep
+	cut
+	head{
+		head -1（获取第一行）
+		head -2（获取第二行）
+		...
+	}
+}
