@@ -33,6 +33,12 @@ nc{
 解压{
 	*.tar 用 tar –xvf 解压
 	*.gz 用 gzip -d或者gunzip 解压
+	{
+		具体步骤：
+		1.gzip -d filename.gz（gunzip filename.gz）->原文件被删除，生成同名文件
+		2.file filename->POSIX tar archive (GNU)
+		3.tar -xvf filename
+	}
 	*.tar.gz和*.tgz 用 tar –xzf 解压
 	*.bz2 用 bzip2 -d或者用bunzip2 解压
 	*.tar.bz2用tar –xjf 解压
@@ -101,6 +107,7 @@ kill{
 查看系统版本{
 	uname -a
 }
+<<<<<<< HEAD
 文件数据分析{
 	awk：按行处理，以空格（多个空格）为默认分隔符将每行切片，切开的部分再进行各种分析处理
 	{
@@ -114,6 +121,18 @@ kill{
 		head -2（获取第二行）
 		...
 	}
+=======
+文件系统授权切换{
+	改变权限：chmod
+	切换拥有者：chown [-r] username filename
+	切换用户组：chgrp [-r] username filename
+}
+用户相关{
+	添加新用户：useradd username
+	修改用户密码：passwd username
+>>>>>>> origin/master
 }
 
+head
+awk
 getconf LONG_BIT
