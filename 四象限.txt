@@ -1,23 +1,41 @@
 第一象限（紧急，重要）：{
-	json文件上传hbase，同时同步solr
-	cdh部署信息整理
-	cdh部署过程问题整理
-	配合web，完成首次入城solr相关查询代码
-	solr，zk自动化部署工具
+	防止数据库级联
+	url编码
+	SQL语句的使用及性能->书籍
+	图书馆用户模块接口
+
+	MQTT协议和websocket协议有什么区别
+	
+	*DataSource自带连接池？
+	*数据源DataSource的作用？及其各实现类
+	
+	java String 默认编码字符集问题
+	
+	http post参数和get参数的区别
+	
+	web调试工具整合
+	
 	了解Spring boot和微服务
-	了解广州交委方案，实现“交通小区”
-	solr时区问题
 	交换机，端口隔离，端口聚合
-	http状态码
-	数据库赋予空值
-	SVN描述规范
-	hbase Unable to parse master hostname
-	各种实体类类型
+	重复提交
+	chdp
+	jqgrid的用法整理
+	js使用事件绑定和触发机制
+	(intermediate value)(...) is not a function
+		用;隔开
+	断言的使用
+	tcp心跳机制
+	linux文件数据分析的相关命令
 }
 第二象限（紧急，不重要）：{
-	linux i586和x64的区别
+	fuelux.tree源码阅读
+	jgrid自定义过滤器
+	jgrid多字段排序
+	* mysql引擎问题，导致无法建立外键
 }
 第三象限（不紧急，重要）{
+	md5加密解密应该放在客户端还是服务器端？
+	java 字符串+效率高还是StringBuilder效率高（时间复杂度，空间复杂度）
 	linux host原理
 	HBase的关闭 2017.2.13
 	Q：HBase创建表PleaseHoldException: Master is initializing 2017.2.13
@@ -27,6 +45,8 @@
 	清空火狐【未完全阅读书签】
 }
 第四象限（不紧急，不重要）{
+	jqgrid serializeEditData无效
+	
 	Solr主从复制，快照系统->记录Solr Replication相关原理流程 2017.2.1~2017.2.2~1小时
 	
 	JMX官方文档 2017.1.22~2017.2.4~3天
@@ -38,6 +58,11 @@
 	Zookeeper检测信息；Zookeeper官方文档 2017.1.23~2017.1.26~3天
 	RedHat使用CentOS的源->Python和yum的关系
 	Linux内存 swap是什么？
+	
+	json文件上传hbase，同时同步solr
+	配合web，完成首次入城solr相关查询代码
+	了解广州交委方案，实现“交通小区”
+	solr，zk自动化部署工具
 }
 
 2017书单：
