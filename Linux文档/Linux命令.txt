@@ -1,5 +1,13 @@
 rpm{
-	rpm -ivh xxx.rpm
+	安装：rpm -ivh xxx.rpm
+	查询：rpm -qa xxx
+	卸载：rpm -e xxx.rpm
+	升级：rpm -Uvh xxx.rpm
+	验证：rpm -Vf xxx.rpm
+	RPM 的其他附加命令：
+		--force 强制操作 如强制安装删除等；
+		--requires 显示该包的依赖关系；
+		--nodeps 忽略依赖关系并继续操作；
 }
 nc{
 	nc -lk 9999	
@@ -25,6 +33,12 @@ nc{
 解压{
 	*.tar 用 tar –xvf 解压
 	*.gz 用 gzip -d或者gunzip 解压
+	{
+		具体步骤：
+		1.gzip -d filename.gz（gunzip filename.gz）->原文件被删除，生成同名文件
+		2.file filename->POSIX tar archive (GNU)
+		3.tar -xvf filename
+	}
 	*.tar.gz和*.tgz 用 tar –xzf 解压
 	*.bz2 用 bzip2 -d或者用bunzip2 解压
 	*.tar.bz2用tar –xjf 解压
@@ -92,4 +106,18 @@ kill{
 }
 查看系统版本{
 	uname -a
+}
+文件数据分析{
+	awk：按行处理，以空格（多个空格）为默认分隔符将每行切片，切开的部分再进行各种分析处理
+	{
+		awk '{pattern + action}' {filenames}
+		（awk  '{print $1}'）
+	}
+	grep
+	cut
+	head{
+		head -1（获取第一行）
+		head -2（获取第二行）
+		...
+	}
 }
