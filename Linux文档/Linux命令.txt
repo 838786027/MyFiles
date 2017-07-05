@@ -66,7 +66,7 @@ kill{
 查看硬盘使用情况{
 	df -hl
 }
-查看文件大小{
+查看文件或文件夹大小{
 	du -s FILENAME【-h或–human-readable 以K，M，G为单位，提高信息的可读性】
 }
 查看对某个文件进行操作的进程{
