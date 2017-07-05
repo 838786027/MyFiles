@@ -34,6 +34,7 @@
 	了解hadoop逻辑结构
 	了解各种分层实体类类型
 	hadoop的安全
+	hdfs format的作用
 }
 第二象限（紧急，不重要）：{
 	linux i586和x64的区别
