@@ -113,7 +113,9 @@ kill{
 		awk '{pattern + action}' {filenames}
 		（awk  '{print $1}'）
 	}
-	grep
+	grep{
+		grep -v grep（排除含grep的行）
+	}
 	cut
 	head{
 		head -1（获取第一行）
