@@ -121,3 +121,8 @@ kill{
 		...
 	}
 }
+pgrep{
+	获取相关进程id
+	例如：pgrep -u mint sh
+	获取用户为‘mint’和进程名为‘sh’的进程ID
+}
