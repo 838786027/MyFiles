@@ -35,8 +35,10 @@
 	了解各种分层实体类类型
 	hadoop的安全
 	hdfs format的作用
+	fastjson，注意读取的json文件的编码格式
 }
 第二象限（紧急，不重要）：{
+	retrofit2各种注解
 	linux i586和x64的区别
 	fuelux.tree源码阅读
 	jgrid自定义过滤器
