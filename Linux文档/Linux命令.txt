@@ -120,4 +120,9 @@ kill{
 		head -2（获取第二行）
 		...
 	}
+	tail -n x fileName：查看file的倒数x行
+}
+文件拷贝{
+	cp -r（递归拷贝）
+	cp --force --backup=numbered test1.py test1.py（版本备份）
 }

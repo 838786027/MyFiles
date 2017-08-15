@@ -36,6 +36,9 @@
 	hadoop的安全
 	hdfs format的作用
 	fastjson，注意读取的json文件的编码格式
+	spring mvc “”无法传入 400
+	openlayers
+	jetty 不支持servlet jsp？
 }
 第二象限（紧急，不重要）：{
 	retrofit2各种注解
