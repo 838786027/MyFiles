@@ -113,7 +113,9 @@ kill{
 		awk '{pattern + action}' {filenames}
 		（awk  '{print $1}'）
 	}
-	grep
+	grep{
+		grep -v grep（排除含grep的行）
+	}
 	cut
 	head{
 		head -1（获取第一行）
@@ -125,4 +127,9 @@ kill{
 文件拷贝{
 	cp -r（递归拷贝）
 	cp --force --backup=numbered test1.py test1.py（版本备份）
+}
+pgrep{
+	获取相关进程id
+	例如：pgrep -u mint sh
+	获取用户为‘mint’和进程名为‘sh’的进程ID
 }
