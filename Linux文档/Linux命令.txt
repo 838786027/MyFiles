@@ -133,3 +133,6 @@ pgrep{
 	例如：pgrep -u mint sh
 	获取用户为‘mint’和进程名为‘sh’的进程ID
 }
+查看进程占用内容{
+	 pmap -d PID
+}

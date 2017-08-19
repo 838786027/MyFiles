@@ -38,6 +38,12 @@
 	spring mvc “”无法传入 400
 	openlayers
 	jetty 不支持servlet jsp？
+	路径可视化
+	基础工具优化
+	为BaseSolrDao设置测试集
+	*是否需要测试集划分？？？
+	大数据基础服务结构图
+	所有项目统一编码格式UTF-8
 }
 第二象限（紧急，不重要）：{
 	retrofit2各种注解
