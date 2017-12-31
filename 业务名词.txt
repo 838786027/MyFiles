@@ -1,0 +1,44 @@
+卡口：bayonet
+卡口方向：bayonet direction -> bayonet direct
+额外：extra
+心跳：heartbeat
+获取：obtain
+巡逻：patrol
+间隔：interval
+总数：amount
+计数：count
+阙值（临界值）：threshold
+广播：broadcast
+原本的：original 
+判断：judge
+权限：permission
+分配：allot
+分析结果：analysis
+共同的、普通的：common
+
+广州交委项目：
+客运：Passenger Transport
+客运站：PTstation
+客运班次：scheme
+客运站点：node
+车辆：vehicle veh
+告警、告警器：alarm
+分析某物：analyze
+外地：outLocal
+本地：the local
+本省：the Province
+本市：the City
+外省：outProvince
+本省外市：outCity
+公交：bus
+公交线路：route
+公交站点：station sta
+发车：depart
+通行，经过，通过：pass，through
+频率：frequency fre
+次数：amount （频率和次数的区别在于频率是指一个单位时间内的次数）
+绑定：bind
+电子围栏：fence
+
+其他：
+数组：顺序无关 -> 复数形式; 顺序有关 -> _list

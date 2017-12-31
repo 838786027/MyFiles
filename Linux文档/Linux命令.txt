@@ -135,4 +135,16 @@ pgrep{
 }
 查看进程占用内容{
 	 pmap -d PID
+	 ps -e -o 'pid,comm,args,pcpu,rsz,vsz,stime,user,uid' | grep PID
+}
+查看命令路径{
+	which command
+}
+查看所有分区的文件系统{
+	parted -> print list
+}
+查看系统核数{
+	查看物理CPU个数：cat /proc/cpuinfo| grep "physical id"| sort| uniq| wc -l
+	查看每个物理CPU中core的个数(即核数)：cat /proc/cpuinfo| grep "cpu cores"| uniq
+	查看逻辑CPU的个数：cat /proc/cpuinfo| grep "processor"| wc -l
 }
